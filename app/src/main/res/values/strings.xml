@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="wed">\u0020\u0020Wed\u0020\u0020</string>
+    <string name="sun">\u0020\u0020Sun\u0020\u0020</string>
+    <string name="mon">\u0020\u0020Mon\u0020\u0020</string>
+    <string name="tue">\u0020\u0020Tue\u0020\u0020</string>
+    <string name="thu">\u0020\u0020Thu\u0020\u0020</string>
+    <string name="fri">\u0020\u0020Fri\u0020\u0020</string>
+    <string name="sat">\u0020\u0020Sat\u0020\u0020</string>
+    <string name="april">April</string>
+</resources>
