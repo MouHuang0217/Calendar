@@ -118,6 +118,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/textview_border"
                 android:paddingBottom="50dp"
+                android:onClick="onClick"
                 android:text="" />
 
             <TextView
