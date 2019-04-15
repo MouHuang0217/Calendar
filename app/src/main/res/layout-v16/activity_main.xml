@@ -7,6 +7,16 @@
     android:background="#89cff0"
     tools:context=".MainActivity">
 
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mcv_selectionColor="#00F"
+        app:mcv_showOtherDates="all" />
+    <!--
     <TableLayout
         android:layout_width="395dp"
         android:layout_height="523dp"
@@ -513,5 +523,5 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 
-
+        -->
 </android.support.constraint.ConstraintLayout>

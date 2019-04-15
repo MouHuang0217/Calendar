@@ -2,9 +2,6 @@ package com.example.calendar;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,13 +17,5 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
-    public void onClick(View v) {
-        final String TAG = "Main activity";
-        TextView tv = findViewById(R.id.textView22);
-        Log.i(TAG, "textview 22 was clicked.");
 
-        TextView tv2 = findViewById(R.id.textView23);
-        Log.i(TAG, "textview 22 was clicked.");
-    }
-    
 }
