@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CalendarDaysCustomText" parent="android:TextAppearance.DeviceDefault.Medium">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CalendarMonthCustomText" parent="android:TextAppearance.DeviceDefault.Large">
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>
