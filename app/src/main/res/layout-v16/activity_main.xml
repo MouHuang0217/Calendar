@@ -8,7 +8,7 @@
     tools:context=".MainActivity">    <!--android:background="#89cff0"-->
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/DateSelectedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -16,7 +16,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="60dp"
-        android:text="DatePicked: "
+        android:text="@string/datepicked"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,25 +38,25 @@
     </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/reminderButton"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
         android:layout_marginBottom="54dp"
-        android:text="Add Reminder"
+        android:text="@string/add_reminder"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/shiftButton"
         android:layout_width="149dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="54dp"
         android:layout_marginRight="54dp"
         android:layout_marginBottom="54dp"
-        android:text="Add Shift"
+        android:text="@string/add_shift"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
