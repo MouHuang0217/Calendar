@@ -22,21 +22,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         MaterialCalendarView calendar = findViewById(R.id.calendarView);
+
+        /**
+         * adds a Date changed listener to the calender, to get the selected date, and if a date is selected,
+         * set buttons to be visible
+         */
         calendar.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
-                TextView textView = findViewById(R.id.textView2);
+                TextView textView = findViewById(R.id.DateSelectedText);
                 String month = Integer.toString(date.getMonth() + 1);
                 String year = Integer.toString(date.getYear());
                 String day = Integer.toString(date.getDay());
-                String formatedDate = (String.format(Locale.getDefault(), "%s - %s - %s", month, day, year));
-                textView.setText("DatePicked: " + formatedDate);
-                //Toast.makeText(MainActivity.this, "" + formatedDate, Toast.LENGTH_SHORT).show();
+                String formattedDate = (String.format(Locale.getDefault(), "%s - %s - %s", month, day, year));
+                textView.setText("DatePicked: " + formattedDate);
+                //Toast.makeText(MainActivity.this, "" + formattedDate, Toast.LENGTH_SHORT).show(); //console check lien
 
-                Button button1 = findViewById(R.id.button);
-                button1.setVisibility(View.VISIBLE);
-                Button button2 = findViewById(R.id.button2);
-                button2.setVisibility(View.VISIBLE);
+                Button reminderBut = findViewById(R.id.reminderButton);
+                Button shiftBut = findViewById(R.id.shiftButton);
+
+                //set their visibility to true, now that a date is selected
+                reminderBut.setVisibility(View.VISIBLE);
+                shiftBut.setVisibility(View.VISIBLE);
+
+                //set buttonListeners to the two buttons after a date is selected
+                reminderBut.setOnClickListener(new ButtonListeners());
+                shiftBut.setOnClickListener(new ButtonListeners());
             }
         });
 

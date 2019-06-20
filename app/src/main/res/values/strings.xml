@@ -8,4 +8,7 @@
     <string name="fri">\u0020\u0020Fri\u0020\u0020</string>
     <string name="sat">\u0020\u0020Sat\u0020\u0020</string>
     <string name="april">April</string>
+    <string name="datepicked">DatePicked:</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="add_shift">Add Shift</string>
 </resources>
